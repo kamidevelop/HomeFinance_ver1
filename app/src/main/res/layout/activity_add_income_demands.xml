@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_income_demands"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddIncomeDemands">
+
+    <LinearLayout
+        android:id="@+id/layoutFields"
+        android:layout_width="0dp"
+        android:layout_height="568dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/layoutButtonsIncomeDemands"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textViewTypeOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тип операции:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerOfTypeOperation"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:entries="@array/items_operations"
+            android:gravity="end"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textViewWho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кто:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerOfWho"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сумма:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#000000" />
+
+        <FrameLayout
+            android:id="@+id/fragmentOfOperations"
+            android:name="com.example.homefinance.Income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Комментарий(опционально):"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtonsIncomeDemands"
+        android:layout_width="410dp"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFields">
+
+        <Button
+            android:id="@+id/saveButtonIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сохранить" />
+
+        <Button
+            android:id="@+id/cancelButtonIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Отменить" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

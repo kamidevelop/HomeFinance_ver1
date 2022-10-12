@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardOfDemand"
+        android:layout_width="match_parent"
+        android:layout_height="97dp">
+
+        <TextView
+            android:id="@+id/textOperationDemand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_demand"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textNameWhoDemand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textSumDemand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textNameDemand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

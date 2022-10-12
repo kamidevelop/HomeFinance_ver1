@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTargetActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageTargetButton"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
+
+    <EditText
+        android:id="@+id/editTargetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Имя цели"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textCurrentSumLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текущая сумма(для корректировки):"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editCurrentSumTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0.0"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textEndSumLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="Конечная сумма:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editEndSumTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButtonTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_save" />
+
+        <Button
+            android:id="@+id/cancelButtonTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_cancel" />
+
+        <Button
+            android:id="@+id/deleteButtonTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_delete"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</LinearLayout>

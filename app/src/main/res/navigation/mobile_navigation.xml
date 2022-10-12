@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_family">
+
+    <fragment
+        android:id="@+id/navigation_family"
+        android:name="com.example.homefinance.ui.family.FamilyFragment"
+        android:label="@string/title_family"
+        tools:layout="@layout/fragment_family" />
+
+    <fragment
+        android:id="@+id/navigation_incomes_demands"
+        android:name="com.example.homefinance.ui.incomedemands.IncomeDemandsFragment"
+        android:label="@string/title_incomes_demands"
+        tools:layout="@layout/fragment_incomes_demands" />
+
+    <fragment
+        android:id="@+id/navigation_days_card"
+        android:name="com.example.homefinance.ui.dayscard.DaysCardFragment"
+        android:label="@string/title_days_card"
+        tools:layout="@layout/fragment_days_card" />
+    <fragment
+        android:id="@+id/navigation_target"
+        android:name="com.example.homefinance.ui.targets.TargetsFragment"
+        android:label="@string/title_targets"
+        tools:layout="@layout/fragment_targets"/>
+</navigation>

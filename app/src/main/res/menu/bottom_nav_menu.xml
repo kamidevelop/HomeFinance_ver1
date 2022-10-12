@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_family"
+        android:icon="@drawable/ic_family_24dp"
+        android:title="@string/title_family" />
+
+    <item
+        android:id="@+id/navigation_incomes_demands"
+        android:icon="@drawable/ic_transfer_24dp"
+        android:title="@string/title_incomes_demands" />
+
+    <item
+        android:id="@+id/navigation_days_card"
+        android:icon="@drawable/ic_dayscard_24dp"
+        android:title="@string/title_days_card" />
+    <item
+        android:id="@+id/navigation_target"
+        android:icon="@drawable/ic_target_24dp"
+        android:title="@string/title_targets"
+        />
+</menu>

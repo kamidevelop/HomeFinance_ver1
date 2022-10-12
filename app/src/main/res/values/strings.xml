@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Домашние финансы</string>
+    <string name="title_family">Семья</string>
+    <string name="title_incomes_demands">Расходы/Доходы</string>
+    <string name="title_days_card">Карточка дня</string>
+    <string name="title_targets">Материальные цели</string>
+    <string name="title_name_second_name">Имя Фамилия Отчество</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_income">Доход</string>
+    <string name="text_demand">Расход</string>
+    <string name="text_fill">Пополнить</string>
+    <string name="text_in_progress">В процессе</string>
+    <string name="text_complete">Завершена</string>
+    <string name="text_save">Сохранить</string>
+    <string name="text_cancel">Отмена</string>
+    <string name="text_delete">Удалить</string>
+    <string-array name="items_operations">
+        <item>Доход</item>
+        <item>Расход</item>
+    </string-array>
+    <string-array name="items_containers">
+        <item>Кошелёк</item>
+        <item>Копилка</item>
+        <item>Бюджет</item>
+    </string-array>
+    <string-array name="errors_messages">
+        <item>Ошибка, в кошельке недостаточно средств.</item>
+        <item>Ошибка, в бюджете недостаточно средств.</item>
+        <item>Ошибка, в копилке недостаточно средств.</item>
+    </string-array>
+</resources>
